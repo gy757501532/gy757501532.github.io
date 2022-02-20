@@ -1,0 +1,350 @@
+<html lang="en"><head>
+    <link rel="stylesheet" href="./pgcss.css">
+    <style>
+        .options {
+            background: url("选项标签.png")no-repeat;
+        }
+
+        .menu-show {
+            left: 0 !important;
+            transition: 300ms;
+        }
+
+        .menu-hide {
+            left: -800px !important;
+            transform: 300ms;
+        }
+
+        .menu1 {
+            /* display: none; */
+            border-radius: 10px;
+            background-color: #383838;
+            padding: 10;
+            height: 1280;
+            z-index: 10;
+            position: absolute;
+            top: 150;
+            left: -800px;
+            width: 620;
+        }
+
+        .link-show {
+            left: 90 !important;
+           
+        }
+
+        .link-hide {
+            left: -800px !important;
+            
+        }
+
+        .link1 {
+            padding: 10px;
+            border-radius: 20px;
+            background-color:#000000;
+            border: 8px solid#d59104;
+            height: 1000;
+            z-index: 10;
+            position: absolute;
+            left: -800px;
+            top: 150;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .divcss5 {
+            text-align: center
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button1 {
+            background: url("组 16.png") no-repeat;
+            border-style: none;
+            width: 87%;
+            height: 75%;
+            top: 1600px;
+            position: absolute;
+            background-size: 100%;
+            left: 60px;
+
+        }
+
+        .button2 {
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #000000;
+            
+
+            height: 300;
+        }
+
+        .button3 {
+            background: url("底部背景.png") no-repeat;
+            border-style: none;
+            width: 100%;
+            height: 38%;
+            top: 3350;
+            position: absolute;
+            background-size: 100%;
+
+        }
+
+        .but1 {
+            width: 500px;
+            height: 200px;
+            background: url("pancake.png");
+            background-size: 100%;
+            border-radius: 20px;
+            border-radius: 50%;
+            border: 0;
+        }
+
+        .box1 {
+            width: 820px;
+            height: 1200px;
+            padding: 25px;
+            margin: 45px;
+            top: 500px;
+        }
+
+        .text1 {
+            padding: 10px;
+            margin: 10px;
+            font-size: 35px;
+            color: #f8b315;
+            left: 55;
+            position: absolute;
+        }
+
+        .text2 {
+            padding: 10px;
+            margin: 10px;
+            font-size: 35px;
+            color: #f8b315;
+            left: 55;
+        }
+
+        html {
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            background-color: #191917;
+        }
+
+        .body {
+            padding: 20px;
+
+        }
+
+        .card {
+            border-radius: 10px;
+            background-color: #181e23;
+            text-align: center;
+        }
+
+        .card1 {
+            background: url(NFT背景.png)no-repeat;
+            border-style: none;
+            width: 900;
+            height: 750;
+            background-size: 100%;
+            padding: 20;
+            margin-top: 150;
+            margin-left: 25px;
+        }
+
+        .card2 {
+            background: url(NFT背景.png)no-repeat;
+            border-style: none;
+            width: 900;
+            height: 750;
+            background-size: 100%;
+            padding: 20;
+            margin-top: 50;
+            margin-left: 25px;
+        }
+
+        .button4 {
+            padding: 13px;
+            border-radius: 100px;
+            background-color: black;
+            text-align: center;
+            margin-right: 200px;
+            margin-left: 200px;
+            margin-top: 37;
+            color: #fff;
+            font-size: 45px;
+            border: 4px solid#d59104;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div style="display: flex;background-color: #2e2f2f;border-bottom: 13px solid #efb643;">
+            <div style="flex: 1;">
+                <img onclick="triggerMenu()" id="menu" width="80" src="图层4.png" style="margin: 20px;">
+            </div>
+            <div style="flex: 1;">
+                <img src="顶部LOGO.png">
+            </div>
+            <div style="flex: 1;">
+                <div onclick="triggerlink()" style="padding: 10px;border-radius: 100px;background-color: #efb643;text-align: center;margin-right: 20px;margin-left: 150px;margin-top: 26px;font-size: 36px;color: #fff;">
+                    连接</div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="margin:0;"><img src="PG简介.png" width="100%" height="35%">
+    </div>
+    <div class="content" style="margin: 20px;">
+        <img src="条.png" width="450" height="90">
+    </div>
+    <div class="content" style="margin: 30px;">
+        <img src="代币机制中文.png" width="820" height="650">
+    </div>
+    <div>
+        <div class=" button1" style="margin-top: 100px;padding: 0px">
+            <div class="text1" style="top: 50;">您的推荐人：</div>
+            <img src="地址显示框.png" width="740" height="110" style="position:absolute; top:150;left: 55;">
+            <div class="text1" style="top:280">您的地址：</div>
+            <img src="地址显示框2.png" width="740" height="80" style="position:absolute; top:370;left: 55;">
+            <div class="text1" style="top:480">今日奖励：<img src="收入显示框.png" width="550" height="75" style="position:absolute;top:0;left: 180;"></div>
+            <div class="text1" style="top:580">总和奖励：<img src="收入显示框.png" width="550" height="75" style="position:absolute;top:0;left: 180;"></div>
+            <div class="text1" style="top:700">推荐人地址：</div>
+            <img src="推荐显示框.png" width="740" height="360" style="position:absolute; top:780;left: 55;">
+        </div>
+        <div style="padding: 50px;margin-top: 1300;">
+            <img src="分界线.png" width="860" height="60">
+        </div>
+        <div class="content" style="margin: 10;padding: 10;">
+            <img src="组 3.png" width="550" height="50">
+        </div>
+        <div class="button2" style="display: flex;align-content: center;justify-content: space-around;align-items: center;">
+            <a href="https://pancakeswap.finance/">
+                <div style="flex: 2;/* text-align: center; */"><img src="pancake.png" width="100%"></div>
+            </a>
+            <a href="https://butterswap.me/">
+                <div style="flex: 2;text-align: center;"><img src="butterswap.png" width="100%"></div>
+            </a>
+        </div>
+        <div class="button3" style="margin-top: 254px;padding: 0px;">
+            <a href="">
+                <div style="padding: 25px;border-radius: 100px;background-color: #efb643;text-align: center;margin-right: 570px;margin-left: 77px;margin-top: 27px;color: #fff;font-size: 40px;">
+                    购买PG</div>
+            </a>
+            <div class="text1" style="position: absolute; top: 140;">社区:</div>
+            <div style="margin-top: 90px;">
+                <a href="">
+                    <div style="margin-top: 20px;padding: 15px;margin-left: 60px;"><img src="TG.png" width="220" height="55"></div>
+                </a>
+                <a href="">
+                    <div style="margin-top: 20px;padding: 15px; margin-left: 60px;"><img src="推特.png" width="200" height="40"></div>
+                </a>
+                <a href="">
+                    <div style="margin-top:20px;padding: 15px;margin-left: 60px;"><img src="discord.png" width="200" height="40"></div>
+                </a>
+            </div>
+            <div class="text1" style="position: absolute; left: 450; top: 140;">信息:</div>
+            <div style="position:absolute; left:450; top:240; "><a href="" class="text2">白皮书</a></div>
+            <div class="content text1" style="top: 490;">合约地址：0xCFBBa23270a42ad2bf4Ed0E2e541F32C1143c288</div>
+        </div>
+    </div>
+
+    <div class="menu1">
+        <div class="content">
+            <div><img src="首页标签.png"></div>
+            <div style="margin-right: -40;margin-left: 20;">
+                <img onclick="triggerMenu()" src="关闭按钮.png">
+            </div>
+        </div>
+        <div style="border: radius 10px; background-color: #000000;padding: 10;height: 1000;margin: 40px;">
+            <a href="index.html">
+                <div class="options" style="margin-left: 75px;margin-top: 46px;">
+                    <div style="color: #efb643;margin-left: 75px;padding: 30px;font-size: 30;">首页</div>
+                </div>
+            </a>
+            <a href="pg-nft-2.html">
+                <div class="options" style="margin-left: 75px;margin-top: 46px;">
+                    <div style="color: #efb643;margin-left: 75px;padding: 30px;font-size: 30;">NFT交易市场</div>
+                </div>
+            </a>
+            <a href="game.html">
+                <div class="options" style="margin-left: 75px;margin-top: 46px;">
+                    <div style="color: #efb643;margin-left: 75px;padding: 30px;font-size: 30;">游戏</div>
+                </div>
+            </a>
+        </div>
+        <div class="content">
+            <a><img src="语言.png"></a>
+        </div>
+    </div>
+
+    <div class="link1">
+            <div style="display: flex;">
+                <div style="flex: 2;font-size: 41px;color: #d59104;">
+                    Connect to a wallet
+                </div>
+                <div style="flex: 1;margin: 5;text-align: end;"><img onclick="triggerlink()" src="关闭按钮.png"></div>
+            </div>
+       
+         <div style="margin: 30;">
+             <img src="小狐狸.png" width="700">
+         </div>
+         <div style="margin: 30;">
+            <img src="binance1.png" width="700">
+        </div>
+        <div style="margin: 30;">
+            <img src="mathwallet.png" width="700">
+        </div>
+        <div style="margin: 30;">
+            <img src="safepal.png" width="700">
+        </div>
+        <div style="margin: 30;">
+            <img src="TP.png" width="700">
+        </div>
+        <div style="margin: 30;">
+            <img src="trustwallet.png" width="700">
+        </div>
+        <div style="margin: 30;">
+            <img src="walletconnect.png" width="700">
+        </div>
+    </div>
+
+
+<script>
+    function triggerMenu() {
+        if (document.querySelector('.menu-show')) {
+            document.querySelector('.menu1').classList.add('menu-hide');
+            setTimeout(() => {
+                document.querySelector('.menu1').classList.remove('menu-show');
+            }, 600);
+        } else {
+            document.querySelector('.menu1').classList.remove('menu-hide');
+            document.querySelector('.menu1').classList.add('menu-show');
+        }
+    }
+    
+    function triggerlink() {
+        if (document.querySelector('.link-show')) {
+            document.querySelector('.link1').classList.add('link-hide');
+            setTimeout(() => {
+                document.querySelector('.link1').classList.remove('link-show');
+            }, 600);
+        } else {
+            document.querySelector('.link1').classList.remove('link-hide');
+            document.querySelector('.link1').classList.add('link-show');
+        }
+    }
+</script>
+
+</body></html>

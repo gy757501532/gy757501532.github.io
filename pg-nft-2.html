@@ -1,0 +1,290 @@
+<html><head>
+    <style>
+        .content{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;  
+                    }
+        html {
+            margin: 0;
+        }
+        body {
+            margin: 0;
+            background-color: #191917;
+        }
+        .body {
+            padding: 20px;
+
+        }
+        .card {
+            border-radius: 10px;
+            background-color: #181e23;
+            text-align: center;
+        }
+        .card1
+        {
+            background: url(NFT背景.png)no-repeat;
+            border-style: none;
+             width: 900;
+            height: 750;
+            background-size: 100%;
+            padding: 20;
+            margin-top: 150;
+             margin-left: 25px;
+        }
+        .options {
+            background: url("选项标签.png")no-repeat;
+        }
+
+        .menu-show {
+            left: 0 !important;
+            transition: 300ms;
+        }
+
+        .menu-hide {
+            left: -800px !important;
+            transform: 300ms;
+        }
+
+        .menu1 {
+            /* display: none; */
+            border-radius: 10px;
+            background-color: #383838;
+            padding: 10;
+            height: 1280;
+            z-index: 10;
+            position: absolute;
+            top: 150;
+            left: -800px;
+            width: 620;
+        }
+
+        .link-show {
+            left: 90 !important;
+           
+        }
+
+        .link-hide {
+            left: -800px !important;
+            
+        }
+
+        .link1 {
+            padding: 10px;
+            border-radius: 20px;
+            background-color:#000000;
+            border: 8px solid#d59104;
+            height: 1000;
+            z-index: 10;
+            position: absolute;
+            left: -800px;
+            top: 150;
+        }
+
+        .card2{
+        background: url(NFT背景.png)no-repeat;
+        border-style: none;
+        width: 900;
+        height: 750;
+        background-size: 100%;
+        padding: 20;
+        margin-top: 50;
+        margin-left: 25px;
+        }
+    .button1{
+        padding: 13px;
+        border-radius: 100px;
+        background-color: black;
+        text-align: center;
+        margin-right: 200px;
+        margin-left: 200px;
+        margin-top: 37;
+        color: #fff;
+        font-size: 45px;
+        border: 4px solid#d59104;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div style="display: flex;background-color: #2e2f2f;border-bottom: 13px solid #efb643;">
+            <div style="flex: 1;">
+                <img onclick="triggerMenu()" id="menu" width="80" src="图层4.png" style="margin: 20px;">
+            </div>
+            <div style="flex: 1;">
+                <img src="顶部LOGO.png">
+            </div>
+            <div style="flex: 1;">
+                <div onclick="triggerlink()" style="padding: 10px;border-radius: 100px;background-color: #efb643;text-align: center;margin-right: 20px;margin-left: 150px;margin-top: 26px;font-size: 36px;color: #fff;">
+                    连接</div>
+            </div>
+        </div>
+    </nav>
+    <div class="body">
+        <div class="card">
+            <img src="盲盒背景1.png" style="width: 770px;margin-top: 35px;">
+            
+            <div style="display: flex;">
+                <div style="font-size: 48px;color: #efb643;text-align: left;padding: 80px 30px 50px 30px;flex: 1;">
+                    100PG+50USDT
+                </div>
+                <div style="flex: 1">
+                    <div style="padding: 27px;border-radius: 100px;background-color: #efb643;text-align: center;margin-right: 60px;margin-left: 18px;margin-top: 56px;color: #fff;font-size: 40px;">购买</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content"> 
+        <img src="头部分界线1.png" width="860" height="60" style="position:absolute;padding: 20px;margin-top: 60px;">
+    </div>
+    <div class="card1">
+        <div style="position: absolute;right: 0;padding: 20;margin-right: 55px;">
+            <img src="编号标签.png" width="100" height="100">
+            <div class="text4" style="position: absolute;top: 32px;color: #fff;font-size: 30;left: 37px;">1000</div>
+        </div>
+        <div class="content"><img src="NFT普通.png" width="320" height="470"></div>
+        <div style="font-size: 55px;color: #d28e04;margin: 44px;">属性：</div>
+        <a href=""><div class="button1">详情   
+        </div></a>
+    </div>
+    <div class="card2">
+        <div style="position: absolute;right: 0;padding: 20;margin-right: 55px;">
+            <img src="编号标签.png" width="100" height="100">
+            <div class="text4" style="position: absolute;top: 32px;color: #fff;font-size: 30;left: 37px;">1000</div>
+        </div>
+        <div class="content"><img src="NFT稀有3.jpg" width="320" height="470"></div>
+        <div style="font-size: 55px;color: #d28e04;margin: 44px;">属性：</div>
+        <a href=""><div class="button1">详情   
+        </div></a>
+    </div>
+    <div class="card2">
+        <div style="position: absolute;right: 0;padding: 20;margin-right: 55px;">
+            <img src="编号标签.png" width="100" height="100">
+            <div class="text4" style="position: absolute;top: 32px;color: #fff;font-size: 30;left: 37px;">1000</div>
+        </div>
+        <div class="content"><img src="NFT传说_副本2.png" width="320" height="470"></div>
+        <div style="font-size: 55px;color: #d28e04;margin: 44px;">属性：</div>
+        <a href=""><div class="button1">详情
+        </div></a>
+    </div>
+    <div class="card2">
+        <div style="position: absolute;right: 0;padding: 20;margin-right: 55px;">
+            <img src="编号标签.png" width="100" height="100">
+            <div class="text4" style="position: absolute;top: 32px;color: #fff;font-size: 30;left: 37px;">1000</div>
+        </div>
+        <div class="content"><img src="NFT史诗_副本3.png" width="320" height="470"></div>
+        <div style="font-size: 55px;color: #d28e04;margin: 44px;">属性：</div>
+        <a href=""><div class="button1">详情   
+        </div></a>
+    </div>
+    <div class="content"> 
+        <img src="头部分界线1.png" width="860" height="60" style="position:absolute;padding: 20px;margin-top: 60px;">
+    </div>
+    <div style="margin-top: 157px;height: 700;background-color: #000000;padding: 10;">
+        <div class="content" style="margin-top: 20;">
+            <img src="顶部LOGO.png">
+        </div>
+        <div>
+
+        </div>
+        <div class="content" style="display: flex;/* text-align: center; */margin-top: 70px;">
+            <div style="flex: 1;text-align: right;">
+                <img src="TGlogo.png">
+            </div>
+            <div style="flex: 1;text-align: center;">
+                <img src="推特logo.png">
+            </div>
+            <div style="flex: 1;text-align: left;">
+                <img src="dis.png">
+            </div>
+        </div>
+    </div>
+    
+    <div class="menu1">
+        <div class="content">
+            <div><img src="首页标签.png"></div>
+            <div style="margin-right: -40;margin-left: 20;">
+                <img onclick="triggerMenu()" src="关闭按钮.png">
+            </div>
+        </div>
+        <div style="border: radius 10px; background-color: #000000;padding: 10;height: 1000;margin: 40px;">
+            <a href="index.html">
+                <div class="options" style="margin-left: 75px;margin-top: 46px;">
+                    <div style="color: #efb643;margin-left: 75px;padding: 30px;font-size: 30;">首页</div>
+                </div>
+            </a>
+            <a href="pg-nft-2.html">
+                <div class="options" style="margin-left: 75px;margin-top: 46px;">
+                    <div style="color: #efb643;margin-left: 75px;padding: 30px;font-size: 30;">NFT交易市场</div>
+                </div>
+            </a>
+            <a href="game.html">
+                <div class="options" style="margin-left: 75px;margin-top: 46px;">
+                    <div style="color: #efb643;margin-left: 75px;padding: 30px;font-size: 30;">游戏</div>
+                </div>
+            </a>
+        </div>
+        <div class="content">
+            <a><img src="语言.png"></a>
+        </div>
+    </div>
+
+    <div class="link1">
+            <div style="display: flex;">
+                <div style="flex: 2;font-size: 41px;color: #d59104;">
+                    Connect to a wallet
+                </div>
+                <div style="flex: 1;margin: 5;text-align: end;"><img onclick="triggerlink()" src="关闭按钮.png"></div>
+            </div>
+       
+         <div style="margin: 30;">
+             <img src="小狐狸.png" width="700">
+         </div>
+         <div style="margin: 30;">
+            <img src="binance1.png" width="700">
+        </div>
+        <div style="margin: 30;">
+            <img src="mathwallet.png" width="700">
+        </div>
+        <div style="margin: 30;">
+            <img src="safepal.png" width="700">
+        </div>
+        <div style="margin: 30;">
+            <img src="TP.png" width="700">
+        </div>
+        <div style="margin: 30;">
+            <img src="trustwallet.png" width="700">
+        </div>
+        <div style="margin: 30;">
+            <img src="walletconnect.png" width="700">
+        </div>
+    </div>
+
+    <script>
+        function triggerMenu() {
+            if (document.querySelector('.menu-show')) {
+                document.querySelector('.menu1').classList.add('menu-hide');
+                setTimeout(() => {
+                    document.querySelector('.menu1').classList.remove('menu-show');
+                }, 600);
+            } else {
+                document.querySelector('.menu1').classList.remove('menu-hide');
+                document.querySelector('.menu1').classList.add('menu-show');
+            }
+        }
+        
+        function triggerlink() {
+            if (document.querySelector('.link-show')) {
+                document.querySelector('.link1').classList.add('link-hide');
+                setTimeout(() => {
+                    document.querySelector('.link1').classList.remove('link-show');
+                }, 600);
+            } else {
+                document.querySelector('.link1').classList.remove('link-hide');
+                document.querySelector('.link1').classList.add('link-show');
+            }
+        }
+    </script>
+</body>
+</html>
